@@ -19,12 +19,13 @@ int main()
 
 	// Begin reading data from the temperature sensor
 	int i;
-	for(i=0; i<20; i++)
+	for(i=0; i<30; i++)
 	{
-		// Read data
+		// Wait 2 seconds between samples
+		delay(2000);
 
-		// wait 1 second
-		delay(1000);
+		// Read data
+		printf("Temperature = %d F \n", tmpSenseObjTemp(0));
 	}
 
 	return 0;
